@@ -1,0 +1,87 @@
+{"frames": {
+
+"2Main-Still1.png":
+{
+	"frame": {"x":0,"y":0,"w":100,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":200},
+	"sourceSize": {"w":100,"h":200},
+	"anchor": {"x":0,"y":0}
+},
+"2Main-Still2.png":
+{
+	"frame": {"x":0,"y":200,"w":100,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":200},
+	"sourceSize": {"w":100,"h":200},
+	"anchor": {"x":0,"y":0}
+},
+"2Main-Still3.png":
+{
+	"frame": {"x":0,"y":400,"w":100,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":200},
+	"sourceSize": {"w":100,"h":200},
+	"anchor": {"x":0,"y":0}
+},
+"2Main-Still4.png":
+{
+	"frame": {"x":0,"y":600,"w":100,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":200},
+	"sourceSize": {"w":100,"h":200},
+	"anchor": {"x":0,"y":0}
+},
+"2Main-Still5.png":
+{
+	"frame": {"x":0,"y":800,"w":100,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":200},
+	"sourceSize": {"w":100,"h":200},
+	"anchor": {"x":0,"y":0}
+},
+"2Main-Still6.png":
+{
+	"frame": {"x":0,"y":1000,"w":100,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":200},
+	"sourceSize": {"w":100,"h":200},
+	"anchor": {"x":0,"y":0}
+},
+"2Main-Still7.png":
+{
+	"frame": {"x":0,"y":1200,"w":100,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":200},
+	"sourceSize": {"w":100,"h":200},
+	"anchor": {"x":0,"y":0}
+},
+"2Main-Still8.png":
+{
+	"frame": {"x":0,"y":1400,"w":100,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":200},
+	"sourceSize": {"w":100,"h":200},
+	"anchor": {"x":0,"y":0}
+}},
+"animations": {
+	"2Main-Still": ["2Main-Still1.png","2Main-Still2.png","2Main-Still3.png","2Main-Still4.png","2Main-Still5.png","2Main-Still6.png","2Main-Still7.png","2Main-Still8.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "warrior.png",
+	"format": "RGBA8888",
+	"size": {"w":100,"h":1600},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ee853c460b9550138ef09f6d5af698c3:dc27ebfd90c6073f9c80fef5a6694a37:380ec401ba9cf63cd4c0319d938fb695$"
+}
+}
