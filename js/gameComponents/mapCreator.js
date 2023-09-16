@@ -121,6 +121,8 @@ const root = new Rectangle(0, 0, 50, 50);
 recursiveSplit(root);
 fillMapWithCorridors(root);
 
+
+
 console.log(map)
 export default map;
 
