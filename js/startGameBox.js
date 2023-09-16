@@ -10,16 +10,6 @@ const startGameText = new PIXI.Container();
 // Send to front
 startGameText.zIndex = 100;
 
-startGameBox.addChild(startGameText);
-
-// Start screen text
-const basicText = new PIXI.Text('Sundered Starlight');
-
-basicText.x = 350;
-basicText.y = 375;
-
-startGameText.addChild(basicText);
-
 const style = new PIXI.TextStyle({
     fontFamily: 'Arial',
     fontSize: 72,
@@ -37,6 +27,16 @@ const style = new PIXI.TextStyle({
     wordWrapWidth: 440,
     lineJoin: 'round',
 });
+
+startGameBox.addChild(startGameText);
+
+// Start screen text
+const basicText = new PIXI.Text('Sundered Starlight', style);
+
+startGameText.x = 350;
+startGameText.y = 375;
+
+startGameText.addChild(basicText);
 
 // Start screen Background
 PIXI.Assets.load('media/purpleBrickWall.jpg').then((texture) =>
