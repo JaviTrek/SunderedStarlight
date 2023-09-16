@@ -26,12 +26,12 @@ map.forEach((row, rowIndex) => {
         let x = colIndex * 100;
         const rectangle = new Graphics();
         if(col === 0) {
-            rectangle.beginFill(0x424141)
+            rectangle.beginFill(0xdddddd)
                 .lineStyle(1, 0x000000, 1)
                 .drawRect(x, y, 100, 100)
                 .endFill();
         } else {
-            rectangle.beginFill(0xebe6d3)
+            rectangle.beginFill(0xffffff)
                 .lineStyle(1, 0x787053, 1)
                 .drawRect(x, y, 100, 100)
                 .endFill();
