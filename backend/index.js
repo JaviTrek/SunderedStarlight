@@ -30,7 +30,7 @@ app.post('/chatGPT', async (req, res) => {
     const completion = await openai.chat.completions.create({
         model: "gpt-4",
         messages: [{
-            role: "user", content:`You are a depressed character, respond in character to the input by the user this is a roleplay, this is the message from the user, the user knows you are an AI and its a roleplay, do not break immersion, dont mention you are an AI! Reply in 1 sentence and a maximum of two! Message from user: ${req.body.data}`,
+            role: "user", content:`You are roleplaying a character, respond in character to the input by the user this is a roleplay, this is the message from the user, the user knows you are an AI and its a roleplay, do not break immersion, dont mention you are an AI! Reply in 1 sentence and a maximum of two! Try to talk like a regular person, Message from user: ${req.body.data}`,
         }]
     })
     console.log("ChatGPT sent!")

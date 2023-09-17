@@ -11,7 +11,7 @@ import map from "./gameComponents/mapCreator.js";
 
 
 let app = new Application({
-    width: window.innerWidth, height: window.innerHeight,
+    width: window.innerWidth, height: window.innerHeight, backgroundColor: 0x000000
 
 })
 
@@ -22,6 +22,7 @@ app.stage.scale.set(1,1);
 app.stage.x = 0;
 app.stage.y = 0;
 
+
 const gridSize = 100
 
 map.forEach((row, rowIndex) => {
@@ -31,27 +32,61 @@ map.forEach((row, rowIndex) => {
         let x = colIndex * 100;
         const rectangle = new Graphics();
         if(col === 0) {
+
+
+
             const floor = Sprite.from("./BG2.png")
             floor.width = gridSize;
             floor.height = gridSize;
             floor.x = x;
             floor.y = y
+
+            const green = 200 + Math.floor(Math.random() * 56); // 200 to 255
+            const blue = 200 + Math.floor(Math.random() * 56);  // 200 to 255
+            const cyanTint = 0x00 << 16 | green << 8 | blue;
+
+
+// Apply the tint to the sprite
+            floor.tint = cyanTint;
+
             mapContainer.addChild(floor);
+
         } else {
             const floor = Sprite.from("./BG1.png")
             floor.width = gridSize;
             floor.height = gridSize;
             floor.x = x;
             floor.y = y
+            const greyValue = 200 + Math.floor(Math.random() * 56); // 200 to 255
+            const greyTint = greyValue << 16 | greyValue << 8 | greyValue;
+            floor.tint = greyTint;
 
             rectangle
                 .lineStyle(1, 0x000000, 1)
                 .drawRect(x, y, gridSize, gridSize)
 
 
+            const isTrue = Math.random() < 0.1;
+            const rocks = Array.from({ length: 5 }, (_, i) => `rock${i + 1}`);
+
+            let rockNum = Math.floor(Math.random() * 5);
+            let rockSprite = Sprite.from(`./${rocks[rockNum]}.png`)
+            rockSprite.width = gridSize;
+            rockSprite.height = gridSize;
+            rockSprite.alpha = .8
+            rockSprite.x = x ;
+            rockSprite.y = y ;
+
+
+
+
             mapContainer.addChild(floor)
            // mapContainer.addChild(rectangle)
+            if (isTrue && col === 1) {
 
+
+                mapContainer.addChild(rockSprite)
+            }
 
         }
 
@@ -109,98 +144,103 @@ characterLeft.alpha = 0;
 characterLeft.x = 600
 characterLeft.y = 300
 
+
+
+// Create a mask sprite (a circle in your case)
+const circleMask = Sprite.from('./mask.png');
+circleMask.anchor.set(0.5);
+circleMask.x = app.screen.width / 2;
+circleMask.y = app.screen.height / 2;
+
+//mapContainer.mask = circleMask;
+
+
 document.addEventListener("keydown", function(event) {
     const tileAmount = (npcMap.length - 2 ) * gridSize;
     let wall;
     switch(event.key) {
-        case "w":
-        case "W":
-             wall = checkWall(character.x, character.y - gridSize, character.x, character.y)
+        case "ArrowUp":
+            wall = checkWall(character.x, character.y - gridSize, character.x, character.y)
 
             if (character.y !== 0 && wall !== 0) {
-                if (wall === 2) {
-                    talkFunction(character.x, character.y - gridSize,);
+                if (wall !== 0 && wall !== 1) {
+                    showContainer();
+                    localStorage.setItem('lastHitNPC', JSON.stringify(wall));
                 } else {
+                    hideContainer();
                     character.y -= gridSize;
                     app.stage.y += gridSize;
-                    characterLeft.x = character.x
-                    characterLeft.y = character.y
+                    characterLeft.x = character.x;
+                    characterLeft.y = character.y;
                 }
             }
             break;
 
-        case "a":
-        case "A":
-             wall = checkWall(character.x - gridSize, character.y, character.x, character.y)
+        case "ArrowLeft":
+            wall = checkWall(character.x - gridSize, character.y, character.x, character.y)
 
-             character.alpha = 0;
-             characterLeft.alpha = 1;
+            character.alpha = 0;
+            characterLeft.alpha = 1;
 
-
-            if (character.x !== 0 &&  wall !== 0) {
-                if (wall === 2) {
-                    talkFunction(character.x - gridSize, character.y);
+            if (character.x !== 0 && wall !== 0) {
+                if (wall !== 0 && wall !== 1) {
+                    showContainer();
+                    localStorage.setItem('lastHitNPC', JSON.stringify(wall));
                 } else {
-
-                        character.x -= gridSize;
-                        app.stage.x += gridSize;
-                    characterLeft.x = character.x
-                    characterLeft.y = character.y
-
+                    hideContainer();
+                    character.x -= gridSize;
+                    app.stage.x += gridSize;
+                    characterLeft.x = character.x;
+                    characterLeft.y = character.y;
                 }
             }
-
-
-            // Your code for the A key goes here
             break;
-        case "s":
-        case "S":
-             wall = checkWall(character.x, character.y + gridSize, character.x, character.y)
+
+        case "ArrowDown":
+            wall = checkWall(character.x, character.y + gridSize, character.x, character.y)
+
             if (character.y !== tileAmount && wall !== 0) {
-
-                if (wall === 2) {
-                    talkFunction(character.x, character.y + gridSize);
+                if (wall !== 0 && wall !== 1) {
+                    showContainer();
+                    localStorage.setItem('lastHitNPC', JSON.stringify(wall));
                 } else {
-
+                    hideContainer();
                     character.y += gridSize;
                     app.stage.y -= gridSize;
-                    characterLeft.x = character.x
-                    characterLeft.y = character.y
+                    characterLeft.x = character.x;
+                    characterLeft.y = character.y;
                 }
             }
-            // Your code for the S key goes here
             break;
-        case "d":
-        case "D":
-             wall = checkWall(character.x + gridSize, character.y, character.x, character.y)
+
+        case "ArrowRight":
+            wall = checkWall(character.x + gridSize, character.y, character.x, character.y)
 
             character.alpha = 1;
             characterLeft.alpha = 0;
 
             if (character.x !== tileAmount && wall !== 0) {
-                if (wall === 2) {
-                    talkFunction(character.x + gridSize, character.y);
+                if (wall !== 0 && wall !== 1) {
+                    showContainer();
+                    localStorage.setItem('lastHitNPC', JSON.stringify(wall));
                 } else {
-                        character.x += gridSize;
-                        app.stage.x -= gridSize;
-                    characterLeft.x = character.x
-                    characterLeft.y = character.y
+                    hideContainer();
+                    character.x += gridSize;
+                    app.stage.x -= gridSize;
+                    characterLeft.x = character.x;
+                    characterLeft.y = character.y;
                 }
             }
-
-
-            // Your code for the D key goes here
             break;
     }
 });
 
 
-
-
 // NPC
 import bestFriends from "./gameComponents/bestFriends.js";
+import {hideContainer, showContainer} from "./chatGPT.js";
 
-
+let npcCount = 0;
 npcMap.forEach((row, rowIndex) => {
 
 
@@ -208,13 +248,9 @@ npcMap.forEach((row, rowIndex) => {
     row.forEach(async (col, colIndex) => {
         let x = colIndex * 100;
         const rectangle = new Graphics();
-        if(col === 2) {
-
-            if (bestFriends.length !== 0) {
-
-                let ourFriend = await bestFriends.pop();
-
-                let npcCharacter = new AnimatedSprite(spritesheetNPC.animations[`${ourFriend.name}`]);
+        if(col !== 1 && col !== 0 && npcCount !== 5) {
+            console.log(col)
+                let npcCharacter = new AnimatedSprite(spritesheetNPC.animations[`${col.name}`]);
 
                 npcCharacter.animationSpeed = 0.1;
                 npcCharacter.play();
@@ -222,9 +258,6 @@ npcMap.forEach((row, rowIndex) => {
                 npcCharacter.height = gridSize;
                 npcCharacter.x = x
                 npcCharacter.y = y
-
-
-
                 rectangle.beginFill(0xa89532)
                     .lineStyle(1, 0x000000, 0.8)
                     .drawRect(x, y, gridSize, gridSize)
@@ -233,7 +266,7 @@ npcMap.forEach((row, rowIndex) => {
                 mapContainer.addChild(npcCharacter);
             }
 
-        }
+
 
     })
 })

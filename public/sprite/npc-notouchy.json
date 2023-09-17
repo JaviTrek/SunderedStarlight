@@ -225,7 +225,7 @@
 	"sourceSize": {"w":200,"h":200}
 }},
 "animations": {
-	"accept": ["npc-accept1.png","npc-accept2.png","npc-accept3.png","npc-accept4.png","npc-accept5.png","npc-accept6.png","npc-accept7.png","npc-accept8.png","npc-accept9.png","npc-accept10.png"],
+	"acceptance": ["npc-accept1.png","npc-accept2.png","npc-accept3.png","npc-accept4.png","npc-accept5.png","npc-accept6.png","npc-accept7.png","npc-accept8.png","npc-accept9.png","npc-accept10.png"],
 	"anger": ["npc-anger1.png","npc-anger2.png","npc-anger3.png","npc-anger4.png"],
 	"denial": ["npc-denial1.png","npc-denial2.png","npc-denial3.png","npc-denial4.png","npc-denial5.png"],
 	"depression": ["npc-depress1.png","npc-depress2.png","npc-depress3.png","npc-depress4.png"],

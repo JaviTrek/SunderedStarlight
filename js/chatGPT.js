@@ -1,16 +1,19 @@
-import axios from "axios"
+import axios from "axios";
 import bestFriends from "./gameComponents/bestFriends.js";
 
-let chatString;
-let bestFriendChat = [];
+let chatStrings = {
+    anger: "",
+    depress: "",
+    denial: "",
+    acceptance: "",
+    guilt: ""
+};
 
 const container = document.getElementById("textContainer");
 
 export function showContainer() {
     container.style.display = "flex";
 }
-
-
 
 export function hideContainer() {
     container.style.display = "none";
@@ -23,27 +26,27 @@ document.addEventListener("DOMContentLoaded", () => {
     const receivedData = document.getElementById("receivedData");
     const sendDataBtn = document.getElementById("sendData");
 
-
-
-    // Initially hide the container
-    //hideContainer();
-
     sendDataBtn.addEventListener("click", async () => {
         try {
+            const currentNPC = JSON.parse(localStorage.getItem('lastHitNPC'));  // Get the current NPC
 
-            chatString += `This is the next message from the user: ${userInput.value}`;
+            // Update chat string for the current NPC
+            chatStrings[currentNPC.name] += `This is the personality of your character: ${currentNPC.personality}. This is the next message from the user: ${userInput.value}`;
+
             // Replace the URL with your API endpoint
             const response = await axios.post("http://localhost:4000/chatGPT", {
-                data: chatString
+                data: chatStrings[currentNPC.name]
             });
-            chatString += `Here is the reply you made as a character to the previous message: ${response.data.content}`
 
+            // Append NPC's reply to chat string for the current NPC
+            chatStrings[currentNPC.name] += `Here is the reply you made as a character to the previous message: ${response.data.content}`;
 
-            // Assume the response data contains a field named 'message'
+            // Assume the response data contains a field named 'content'
             receivedData.value = response.data.content;
 
             // Show the container after successful POST request
             showContainer();
+
         } catch (error) {
             console.error("An error occurred:", error);
             receivedData.value = "An error occurred.";
