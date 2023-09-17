@@ -1,0 +1,55 @@
+{"frames": {
+
+"npc2.png":
+{
+	"frame": {"x":1,"y":1,"w":115,"h":163},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":24,"w":115,"h":163},
+	"sourceSize": {"w":200,"h":200}
+},
+"npc3.png":
+{
+	"frame": {"x":1,"y":166,"w":115,"h":161},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":26,"w":115,"h":161},
+	"sourceSize": {"w":200,"h":200}
+},
+"npc4.png":
+{
+	"frame": {"x":1,"y":329,"w":115,"h":160},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":27,"w":115,"h":160},
+	"sourceSize": {"w":200,"h":200}
+},
+"npc5.png":
+{
+	"frame": {"x":1,"y":166,"w":115,"h":161},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":26,"w":115,"h":161},
+	"sourceSize": {"w":200,"h":200}
+},
+"npc6.png":
+{
+	"frame": {"x":1,"y":1,"w":115,"h":163},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":24,"w":115,"h":163},
+	"sourceSize": {"w":200,"h":200}
+}},
+"animations": {
+	"npc": ["npc2.png","npc3.png","npc4.png","npc5.png","npc6.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "npc2.png",
+	"format": "RGBA8888",
+	"size": {"w":117,"h":490},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:859f170be23144242ef5c7ca4cb5fa7c:8262272286529bd1e3f196eecf81d6fc:9d9b165b7a755e630a3fd49cfd4bc506$"
+}
+}

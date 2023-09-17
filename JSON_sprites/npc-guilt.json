@@ -1,0 +1,55 @@
+{"frames": {
+
+"npc-guilt1.png":
+{
+	"frame": {"x":1,"y":1,"w":138,"h":182},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":14,"w":138,"h":182},
+	"sourceSize": {"w":200,"h":200}
+},
+"npc-guilt2.png":
+{
+	"frame": {"x":141,"y":1,"w":138,"h":182},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":14,"w":138,"h":182},
+	"sourceSize": {"w":200,"h":200}
+},
+"npc-guilt3.png":
+{
+	"frame": {"x":561,"y":1,"w":137,"h":182},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":14,"w":137,"h":182},
+	"sourceSize": {"w":200,"h":200}
+},
+"npc-guilt4.png":
+{
+	"frame": {"x":281,"y":1,"w":138,"h":182},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":14,"w":138,"h":182},
+	"sourceSize": {"w":200,"h":200}
+},
+"npc-guilt5.png":
+{
+	"frame": {"x":421,"y":1,"w":138,"h":182},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":14,"w":138,"h":182},
+	"sourceSize": {"w":200,"h":200}
+}},
+"animations": {
+	"npc-guilt": ["npc-guilt1.png","npc-guilt2.png","npc-guilt3.png","npc-guilt4.png","npc-guilt5.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "npc-guilt.png",
+	"format": "RGBA8888",
+	"size": {"w":699,"h":184},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:dfebda362c58a4f1871c6f1b56ac18b8:acaeb00ad98f2b6bb44fe2da146e06c3:90a9b66eeaa993f3066c90fc87e73e18$"
+}
+}
