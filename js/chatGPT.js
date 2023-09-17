@@ -1,6 +1,8 @@
 import axios from "axios"
+import bestFriends from "./gameComponents/bestFriends.js";
 
 let chatString;
+let bestFriendChat = [];
 
 const container = document.getElementById("textContainer");
 

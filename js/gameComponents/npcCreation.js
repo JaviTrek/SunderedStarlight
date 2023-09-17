@@ -1,4 +1,5 @@
 import map from "./mapCreator.js"
+import bestFriends from "./bestFriends.js";
 
 // Function to place 5 random NPCs (value 2) in the map array
 function placeRandomNPCs(map) {
@@ -29,6 +30,7 @@ function placeRandomNPCs(map) {
 
 // Place 5 random NPCs in the map
 placeRandomNPCs(map);
+
 
 
 const npcMap = map;
