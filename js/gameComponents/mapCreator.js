@@ -123,6 +123,6 @@ fillMapWithCorridors(root);
 
 
 
-console.log(map)
+
 export default map;
 
