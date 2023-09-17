@@ -9,7 +9,7 @@ import npcMap from "./gameComponents/npcCreation.js";
 import map from "./gameComponents/mapCreator.js";
 
 // Create new audio object
-const audio = new Audio('./ambient_rumble_tumble_with_loop');
+const audio = new Audio('./ambient_rumble_tumble_with_loop.mp3');
 
 // When audio is loaded, play it
 audio.addEventListener('canplaythrough', (event) => {
