@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Vite App</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <body>
+    <div id="app"></div>
+    <div id="textContainer" class="container">
+      <div>
+        <p>Your Response</p>
+        <textarea id="userInput" placeholder="Type here..."></textarea>
+
+      </div>
+      <div>
+        <p>Their Response</p>
+        <textarea id="receivedData" readonly placeholder="Received data will appear here..."></textarea>
+      </div>
+      <button id="sendData">Send Response</button>
+
+    </div>
+
+    <script type="module" src="js/chatGPT.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

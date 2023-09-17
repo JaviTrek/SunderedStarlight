@@ -1,0 +1,55 @@
+{"frames": {
+
+"npc-denial1.png":
+{
+	"frame": {"x":1,"y":1,"w":181,"h":234},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":52,"y":7,"w":181,"h":234},
+	"sourceSize": {"w":250,"h":250}
+},
+"npc-denial2.png":
+{
+	"frame": {"x":1,"y":237,"w":181,"h":231},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":52,"y":10,"w":181,"h":231},
+	"sourceSize": {"w":250,"h":250}
+},
+"npc-denial3.png":
+{
+	"frame": {"x":1,"y":470,"w":181,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":52,"y":11,"w":181,"h":230},
+	"sourceSize": {"w":250,"h":250}
+},
+"npc-denial4.png":
+{
+	"frame": {"x":1,"y":237,"w":181,"h":231},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":52,"y":10,"w":181,"h":231},
+	"sourceSize": {"w":250,"h":250}
+},
+"npc-denial5.png":
+{
+	"frame": {"x":1,"y":1,"w":181,"h":234},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":52,"y":7,"w":181,"h":234},
+	"sourceSize": {"w":250,"h":250}
+}},
+"animations": {
+	"npc-denial": ["npc-denial1.png","npc-denial2.png","npc-denial3.png","npc-denial4.png","npc-denial5.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "npc-denial.png",
+	"format": "RGBA8888",
+	"size": {"w":183,"h":701},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a91fbe711b0a762664f2683bb3d06748:0492f7699e2f76e202b3de39ffdb606d:208d105b871ee38e32b717748c7dedd5$"
+}
+}

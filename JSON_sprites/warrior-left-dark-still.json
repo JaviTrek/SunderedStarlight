@@ -1,0 +1,71 @@
+{"frames": {
+
+"Main-Still-dark-leftt1.png":
+{
+	"frame": {"x":1,"y":1,"w":93,"h":184},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":12,"w":93,"h":184},
+	"sourceSize": {"w":100,"h":200}
+},
+"Main-Still-dark-leftt2.png":
+{
+	"frame": {"x":1,"y":187,"w":93,"h":184},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":12,"w":93,"h":184},
+	"sourceSize": {"w":100,"h":200}
+},
+"Main-Still-dark-leftt3.png":
+{
+	"frame": {"x":1,"y":742,"w":93,"h":180},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":16,"w":93,"h":180},
+	"sourceSize": {"w":100,"h":200}
+},
+"Main-Still-dark-leftt4.png":
+{
+	"frame": {"x":1,"y":924,"w":93,"h":178},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":18,"w":93,"h":178},
+	"sourceSize": {"w":100,"h":200}
+},
+"Main-Still-dark-leftt5.png":
+{
+	"frame": {"x":1,"y":559,"w":93,"h":181},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":15,"w":93,"h":181},
+	"sourceSize": {"w":100,"h":200}
+},
+"Main-Still-dark-leftt6.png":
+{
+	"frame": {"x":1,"y":373,"w":93,"h":184},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":12,"w":93,"h":184},
+	"sourceSize": {"w":100,"h":200}
+},
+"Main-Still-dark-leftt7.png":
+{
+	"frame": {"x":1,"y":1,"w":93,"h":184},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":12,"w":93,"h":184},
+	"sourceSize": {"w":100,"h":200}
+}},
+"animations": {
+	"Main-Still-dark-leftt": ["Main-Still-dark-leftt1.png","Main-Still-dark-leftt2.png","Main-Still-dark-leftt3.png","Main-Still-dark-leftt4.png","Main-Still-dark-leftt5.png","Main-Still-dark-leftt6.png","Main-Still-dark-leftt7.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "warrior-left-dark-still.png",
+	"format": "RGBA8888",
+	"size": {"w":95,"h":1103},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ffd17c364637725f040604d3b99f2e3e:48f319172b5228537ede479d36c75396:bf5cb5402e3edced22e6a9aad011a44a$"
+}
+}
