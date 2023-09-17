@@ -8,10 +8,20 @@ import checkWall from "./gameComponents/checkWall.js";
 import npcMap from "./gameComponents/npcCreation.js";
 import map from "./gameComponents/mapCreator.js";
 
+// Create new audio object
+const audio = new Audio('./ambient_rumble_tumble_with_loop');
+
+// When audio is loaded, play it
+audio.addEventListener('canplaythrough', (event) => {
+    audio.play();
+});
+
+// Set the audio to loop
+audio.loop = true;
 
 
 let app = new Application({
-    width: window.innerWidth, height: window.innerHeight, backgroundColor: 0x000000
+    width: window.innerWidth, height: window.innerHeight,
 
 })
 
@@ -21,6 +31,7 @@ let mapContainer = new Container;
 app.stage.scale.set(1,1);
 app.stage.x = 0;
 app.stage.y = 0;
+
 
 
 const gridSize = 100
@@ -145,15 +156,20 @@ characterLeft.x = 600
 characterLeft.y = 300
 
 
+/*const overlay = new Graphics();
+overlay.beginFill(0x000000, 0.7);  // Black, 70% opacity
+overlay.drawRect(0, 0, app.screen.width, app.screen.height);
+overlay.endFill();
+mapContainer.addChild(overlay);
 
 // Create a mask sprite (a circle in your case)
 const circleMask = Sprite.from('./mask.png');
 circleMask.anchor.set(0.5);
-circleMask.x = app.screen.width / 2;
-circleMask.y = app.screen.height / 2;
-
-//mapContainer.mask = circleMask;
-
+circleMask.width = 500;
+circleMask.height = 500;
+circleMask.x = character.x + 100;
+circleMask.y = character.y + 200;
+overlay.mask = circleMask;*/
 
 document.addEventListener("keydown", function(event) {
     const tileAmount = (npcMap.length - 2 ) * gridSize;
