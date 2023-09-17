@@ -1,0 +1,95 @@
+{"frames": {
+
+"npc-accept1.png":
+{
+	"frame": {"x":1,"y":1,"w":187,"h":188},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":48,"w":187,"h":188},
+	"sourceSize": {"w":250,"h":250}
+},
+"npc-accept2.png":
+{
+	"frame": {"x":1,"y":381,"w":187,"h":187},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":49,"w":187,"h":187},
+	"sourceSize": {"w":250,"h":250}
+},
+"npc-accept3.png":
+{
+	"frame": {"x":1,"y":759,"w":187,"h":186},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":50,"w":187,"h":186},
+	"sourceSize": {"w":250,"h":250}
+},
+"npc-accept4.png":
+{
+	"frame": {"x":1,"y":1135,"w":187,"h":184},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":52,"w":187,"h":184},
+	"sourceSize": {"w":250,"h":250}
+},
+"npc-accept5.png":
+{
+	"frame": {"x":1,"y":1321,"w":187,"h":182},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":54,"w":187,"h":182},
+	"sourceSize": {"w":250,"h":250}
+},
+"npc-accept6.png":
+{
+	"frame": {"x":1,"y":1135,"w":187,"h":184},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":52,"w":187,"h":184},
+	"sourceSize": {"w":250,"h":250}
+},
+"npc-accept7.png":
+{
+	"frame": {"x":1,"y":947,"w":187,"h":186},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":50,"w":187,"h":186},
+	"sourceSize": {"w":250,"h":250}
+},
+"npc-accept8.png":
+{
+	"frame": {"x":1,"y":570,"w":187,"h":187},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":49,"w":187,"h":187},
+	"sourceSize": {"w":250,"h":250}
+},
+"npc-accept9.png":
+{
+	"frame": {"x":1,"y":191,"w":187,"h":188},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":48,"w":187,"h":188},
+	"sourceSize": {"w":250,"h":250}
+},
+"npc-accept10.png":
+{
+	"frame": {"x":1,"y":1,"w":187,"h":188},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":48,"w":187,"h":188},
+	"sourceSize": {"w":250,"h":250}
+}},
+"animations": {
+	"npc-accept": ["npc-accept1.png","npc-accept2.png","npc-accept3.png","npc-accept4.png","npc-accept5.png","npc-accept6.png","npc-accept7.png","npc-accept8.png","npc-accept9.png","npc-accept10.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "npc-accept.png",
+	"format": "RGBA8888",
+	"size": {"w":189,"h":1504},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a7870006f9e0b6a3639ac1cc437776af:9cc97fc411cef0e398775c0247bb170a:79238d1dbc8d04ae7be4c38f44996a44$"
+}
+}
